@@ -1,0 +1,121 @@
+html {
+    width: 78vw;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgb(41, 41, 41);
+    
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+
+#Compliment {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94, 94, 94);
+    border-radius: 30px;
+    border: none;
+    height: fit-content;
+    
+}
+
+#fortune {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94, 94, 94);
+    border-radius: 30px;
+    border: none;
+    height: fit-content;
+}
+
+
+
+#Compliment button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    font-size: larger;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    background-color: rgb(15, 131, 112);
+    color:white;
+    padding: 5px;
+}
+
+#fortune button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    font-size: larger;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    background-color: rgb(15, 131, 112);
+    color:white;
+    padding: 5px;
+}
+
+
+
+#Compliment button:active{
+    position: relative;
+    top: 15px;
+    background-color: rgb(13, 102, 87);
+    border-color: rgb(197, 197, 197);
+    color: rgb(197, 197, 197);
+}
+
+#fortune button:active{
+    position: relative;
+    top: 15px;
+    background-color: rgb(13, 102, 87);
+    border-color: rgb(197, 197, 197);
+    color: rgb(197, 197, 197);
+}
+
+#submitInput:active{ 
+    position: relative;
+    top: 5px;
+    background-color: rgb(13, 102, 87);
+    border-color: rgb(197, 197, 197);
+    color: rgb(197, 197, 197);
+}
+
+
+
+#compInput {
+    font-size: larger;
+    border: 2px solid rgb(15, 131, 112);
+    border-radius: 25px;
+    color:white 
+}
+
+#fortInput {
+    font-size: larger;
+    border: 2px solid rgb(15, 131, 112);
+    border-radius: 25px;
+    color:white 
+}
+
+
+
+#submitInput {
+    font-size: larger;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    background-color: rgb(15, 131, 112);
+    color:white;
+}
