@@ -8,6 +8,18 @@ const getCompliment = () => {
     });
 };
 
+const compSubmit = document.getElementById("comp-submit");
+
+addCompliment = (string) => {
+    const compCard = document.createElement("div");
+    compCard.classList = "comp-card";
+
+    compCard.innerHTML = `<p>${addedComp}</p>
+    <div class="comp-card-buttons">
+    <button onclick="deleteComp(${comps})">delete</button>
+    <div/>
+    `
+}
 
 
 const fortuneBtn = document.getElementById("fortuneButton")
@@ -20,5 +32,7 @@ const getFortune = () => {
     });
 };
 
+
+compSubmit.addEventListener("click", getCompliment);
 complimentBtn.addEventListener('click', getCompliment)
 fortuneBtn.addEventListener('click', getFortune)

@@ -14,7 +14,7 @@ html {
 
 #Compliment {
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@ html {
 #fortune {
     position: relative;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +86,7 @@ html {
     color: rgb(197, 197, 197);
 }
 
-#submitInput:active{ 
+#comp-submit:active{ 
     position: relative;
     top: 5px;
     background-color: rgb(13, 102, 87);
@@ -100,19 +100,27 @@ html {
     font-size: larger;
     border: 2px solid rgb(15, 131, 112);
     border-radius: 25px;
-    color:white 
+    color:rgb(0, 0, 0) 
 }
 
 #fortInput {
     font-size: larger;
     border: 2px solid rgb(15, 131, 112);
     border-radius: 25px;
-    color:white 
+    color:rgb(0, 0, 0) 
 }
 
 
 
-#submitInput {
+#comp-submit {
+    font-size: larger;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    background-color: rgb(15, 131, 112);
+    color:white;
+}
+
+#fort-submit {
     font-size: larger;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 25px;

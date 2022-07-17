@@ -1,3 +1,6 @@
+const comps = [] 
+const forts = [] 
+const globalId = 11
 module.exports = {
 
     getCompliment: (req, res) => {
@@ -20,8 +23,26 @@ module.exports = {
         res.status(200).send(randomFortunes);
     },
 
-    addCompliment: (req, res) => {
-        const { compliments } = req.body;
-        
+    addComp: (req, res) => {
+        EventTarget.preventDefault();
+        const { addedComp } = req.body;
+        let newComp = {
+            id: globalId,
+            addedComp
+        }
+        comps.push(newComp);
+        res.status(200).send(comps);
+    },
+
+    deleteComp: (req, res) => {
+        let {id} = req.params;
+        let index = comps.findIndex(comp => +comp.id === +id);
+        if (index === -1) {
+            res.status(404).send("No compliment found with that id");
+        } else {
+            comps.splice(index, 1);
+            res.status(200).send(comps);
+        }
     }
+        
 }
